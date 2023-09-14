@@ -1,0 +1,15 @@
+Terrain building
+
+unity is still 32bit
+
+-2^32 to 2^32 -1
+
+create terrain
+
+game object -> 3d object -> Terrain
+
+Terrains are downloaded from the store
+
+"standard assests"
+
+can also do layers of terrains
