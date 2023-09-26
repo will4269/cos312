@@ -49,7 +49,109 @@ a=n/m
 
 n=#of keys stored in the table
 m=#of slots in the table
+-----------------------------------------------------------------------
+Division Method (Modulo)
+
+Must say mod
+
+maps a resultant number from 0 to m when h(k)=k mod m
+
+-----------------------------------------------------------------------
+EX
+10,21,30,45,49
+m=10
+h(k) = k mod m
+h(10)=0 *fit
+h(21)=1 *fit
+h(30)=0 *collisions*
+h(45)=5 *fit
+h(49)=9 *fit
+
+--------------------------------------------------------------------
+how to pick size of table m
+
+if it is m=2^n last n bits of key are used
+
+if it is m=10^n digits of key are used
+
+both not good, use a prime number near a power of 2 as it helps avoid digit overlap
+
+10,5,7,11,12
+m=5
+
+h(10)=0
+h(5)=0
+h(7)=2
+h(11)=1
+h(12)=2
+
+end lecture 7
+
+\////////////////////////
+
+lecture 8
+
+Recap: common problem is collison h(ki)=h(kj)=c
+
+[]
+
+linear probing
+
+h(k,i)=h(k)+i=k mod m + i
+i=0
+if h(k,i) results in collision, i=i+1
+until table has been looped around
+
+EX
+
+18,14,21,1,35
+m=7
+h(k,i)=h(k)+i=k mod m + i
+[0,1,2,3,4,5,6,7]
+[ , , , , , , , ]
+\
+h(18,0)= 18 mod 7 + 0 = 4 *fits*
+[0,1,2,3,4,5,6,7]
+[ , , , ,18 , , , ]
+\
+h(14,0)= 14 mod 7 + 0 = 0 *fits*
+[0,1,2,3,4,5,6,7]
+[14 , , , ,18 , , , ]
+\
+h(21,0)= 21 mod 7 + 0 = 0 *collides* | with 14
+h(21,1)= 21 mod 7 + 1 = 1 *fits*
+[0,1,2,3,4,5,6,7]
+[14,21, , ,18 , , , ]
+/
+h(1,0)= 1 mod 7 + 0 = 1 *collides* | with 21
+h(1,1)= 1 mod 7 + 1 = 2 *fits*
+[0,1,2,3,4,5,6,7]
+[14,21,2, ,18 , , , ]
+\
+h(35,0)= 35 mod 7 + 0 = 0 *collides* | with 14
+h(35,1)= 35 mod 7 + 1 = 1 *collides* | with 21
+h(35,2)= 35 mod 7 + 2 = 2 *collides* | with 2
+h(35,2)= 35 mod 7 + 3 = 3 *fits*
+
+4 probs
+[0,1,2,3,4,5,6,7]
+[14,21,2,35,18 , , , ]
+\
+done
+\
 
 
+--------------------------------------
+quadratic probing
+
+h(k,i)=h(k) + i^2 = k mod m + i^2
 
 
+]]]
+double probing
+
+h(k,i)={h_1(k)+i*h_2(k)}mod m, as defined uniquely in problem
+
+EX
+h_1(k)=k mod 5
+h_2(k)=k mod 7
