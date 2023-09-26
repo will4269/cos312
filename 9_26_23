@@ -1,0 +1,55 @@
+failed to commit last class notes
+
+there was an inclass example to but it was not passed along due to git commit closing when battery died
+
+Hashing: is an algorithim that maps large data sets of variable length, called keys, to smaller sets of data with a fixed length
+
+A hash table: is a data structure use a hash function to efficently map keys to values for efficent search and retrieval
+
+h(k) hash function, input key (k)
+h(k)=hash code (c) 
+
+compression map takes hash code (c) and maps it to a value
+
+all requirements
+-good hash function
+-table so that # of table entries > # of buckets *collisions
+
+-used in many software applications: associative arrays, database indexing, and sets
+
+Good Hash Function h(k);
+-Fast O(1)
+-scatters keys evenly through the table
+>>keys -> h(k)=c -> table uses c to store location
+-less collisions
+-needs less slots | memeory
+
+Bad Hash Function Example:
+h() = 4th digit * 10 + 8th digit | from the left
+
+h(67 754 378) = 58
+h(63 497 820) = 90
+
+This is bad as if the first 3 digits fluctuate the data can be collisided
+
+-------------------------------------------------------------------------
+
+Uniform Hash Function:
+
+h(k)=[k*m/x]
+
+k= key
+m= size of hash table
+x= size of set the keys are distributed in [0,x), 0<=k<x
+
+------------------------------------------------------------------------
+load factor a
+
+a=n/m
+
+n=#of keys stored in the table
+m=#of slots in the table
+
+
+
+
