@@ -1,0 +1,11 @@
+Rigidbody modifier
+
+adds physics besides collision
+
+rigid body makes objects physics active
+
+Every object with a rigid body needs mass
+
+Drag and angular drag
+
+drag can operate against any force
