@@ -1,0 +1,34 @@
+Physics:
+
+simulation programming
+
+PhysX engine
+
+Translation and rotational kinematics
+
+force, torque, drag
+
+physics are highly educated guesses
+simulations do not require input
+can be wrong
+never perfect
+
+----------
+
+Edit->Project settigns->Phsyics settings
+
+Default matterial:
+
+physics material is used in computation
+
+default is frictionless
+
+rubber, ice, wood
+
+Bounce threshold: min velocity to trigger to bounce
+
+sleep threshold: min velocity to continue simualting
+
+contact offset: distance away from faces to collide
+
+default solver: amount of passes per frame of physics interactions
