@@ -1,0 +1,41 @@
+C# programmming language
+
+can be annoying
+
+
+creation of a script comes with
+
+unity includes 
+
+start()
+
+update() //calls on each frame
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+dont touch those
+
+Awake()
+called for a object when the simulation starts
+
+update()
+calls on everyframe
+Number of FPS based
+
+FixedUpdate()
+called exactly N times per second
+N times per second fixed
+
+
+class name in generic <>
+this.GetComponent<Rigidbody>()
+
+this.GetComponent<Rigidbody>().AddForce(New Vector3(0.0F,3.0F,-30.0F), ForceMode.VelocityChange);
+
+how to make objects stop on collision
+
+momentary kinematic
+
+using edge trigger
