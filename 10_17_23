@@ -1,0 +1,17 @@
+created a rocket
+
+collisions
+
+rotational kinematics
+
+Beware: Transform is a data sturct
+
+Transform.LookAt() uses another objects transform as a position, and faces it
+
+transforms will fail to respect of transform
+
+transform will not cause physics
+
+translate will still have kinematics
+
+collision enter,exit,stay
