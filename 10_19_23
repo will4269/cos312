@@ -1,0 +1,27 @@
+Physics
+
+cannonball
+Wrecking ball
+orbits
+
+create prefabs?
+
+physics implementations
+
+ability to specifiy abjects created
+
+can call prefabs in scripts
+
+prefabs: first person controller, the rocks, most external models with geometry, any object with sub objects
+
+create empty object: Name class
+
+can have premades inported
+public GameObject ....
+
+Public Gameobject Firept;
+Public Gameobject Shell;
+
+Instantiate(shell, FirePt.Transform.position, FirePt.Transform.rotation);
+
+If(Input.GetKey("E")){}
