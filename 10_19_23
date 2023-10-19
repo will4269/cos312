@@ -25,3 +25,8 @@ Public Gameobject Shell;
 Instantiate(shell, FirePt.Transform.position, FirePt.Transform.rotation);
 
 If(Input.GetKey("E")){}
+
+
+multiple types of joints to hold rigid bodies together.
+
+
