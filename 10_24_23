@@ -1,0 +1,12 @@
+Hinges: to be used
+
+Impulse and constant forces: utilized earlier in physics
+
+joint classes:
+joint is a base class
+
+joints are not parenting
+
+joints are a data struct to act between these 2 objects with force limit constraints
+
+breaking forces with joints
